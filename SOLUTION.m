@@ -274,6 +274,8 @@ waterfall(freq_wf,speed_wf,recep_wf(:,:))
 xlabel('Frequency (Hz)')
 ylabel('Speed (RPM)')
 zlabel('Amplitude (m)')
+xlim([0 400])
+ylim([0 24000])
 set(gca,'fontsize',24)
 
 

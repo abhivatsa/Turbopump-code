@@ -7,9 +7,9 @@ data_set(:,1)=Time.';
 data_set(:,3)=N_rpm_coast.';
 
 ctr=0;
-for i=1001:500:(length(data_set(:,2))-300)
+for i=600:1000:(length(data_set(:,2))-300)
     ctr=ctr+1
-    data_fft=data_set(i-200:i+200,:);
+    data_fft=data_set(i-500:i+500,:);
 
     Time = data_fft(:,1);
     samp_time = Time(2)-Time(1); 
