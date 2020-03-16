@@ -1,5 +1,6 @@
 function [] = campbell(nat_freq,N,kappa)
 nat_freq_Hz=nat_freq/(2*pi);
+% initializing whirl_dirn variable
 whirl_dirn=zeros(length(nat_freq_Hz),length(N));
 N_Hz=(N/60)*[1];
 plot(N,nat_freq_Hz,'k-',N,N_Hz,'b--');
